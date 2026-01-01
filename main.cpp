@@ -6,3 +6,4 @@ int main() {
   std::cout << "CI is running my program." << std::endl;
   return 0;
 }
+
