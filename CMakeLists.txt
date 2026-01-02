@@ -10,5 +10,5 @@ enable_testing()
 
 add_test(
   NAME output_matches_expected
-  COMMAND bash -c "$<TARGET_FILE:app> > actual.txt && diff -u expected.txt actual.txt"
+  COMMAND bash -c "$<TARGET_FILE:app> > ${CMAKE_BINARY_DIR}/actual.txt && diff -u ${CMAKE_SOURCE_DIR}/expected.txt ${CMAKE_BINARY_DIR}/actual.txt"
 )
