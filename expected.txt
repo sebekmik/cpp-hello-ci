@@ -1,0 +1,3 @@
+Hello from GitHub CI!
+2 + 2 = 4
+CI is running my program.
