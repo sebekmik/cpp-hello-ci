@@ -5,11 +5,11 @@ on:
   pull_request:
 
 jobs:
-  build-and-run:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build
-        run: g++ -std=c++17 -O2 -Wall -Wextra -pedantic main.cpp -o app
-      - name: Run
-        run: ./app
+
+      - name: Run output test
+        run: bash test.sh
+
